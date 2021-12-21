@@ -43,7 +43,7 @@ const rocketReducer = (state = initialState, action) => {
     case CANCEL_ROCKET_BOOKING:
       return {
         ...state,
-        bookedRockets: state.bookedRockets.filter((rocket) => rocket.id !== action.payload.id),
+        bookedRockets: state.bookedRockets.filter((id) => id !== action.payload),
       };
     default:
       return state;

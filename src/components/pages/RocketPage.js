@@ -1,14 +1,35 @@
 import PropTypes from 'prop-types';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { bookRocket } from '../../redux/rocket/rocket';
+import { Rocket } from '../Rocket';
 
 const RocketPage = (props) => {
+  const { rockets } = props;
 
-  const { rockets } = props; 
+  const dispatch = useDispatch();
+  const reserveRocket = (id) => {
+    dispatch(bookRocket(id));
+  };
+
+  const cancelRocketBooking = (id) => {
+    dispatch(cancelRocketBooking(id));
+  };
+
   return (
-  <div>
-    <h3>RocketPage</h3>
-
-  </div>
+    <div>
+      <h3>RocketPage</h3>
+      <ul className="rocketsContainer">
+        {rockets.map((rocket) => (
+          <Rocket
+            key={rocket.id}
+            name={rocket.name}
+            description={rocket.description}
+            handleBookRocket={reserveRocket}
+            handleUnbookRocket={cancelRocketBooking}
+          />
+        ))}
+      </ul>
+    </div>
   );
 };
 

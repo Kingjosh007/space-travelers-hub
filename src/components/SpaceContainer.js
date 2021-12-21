@@ -15,14 +15,17 @@ const SpaceContainer = () => {
     dispatch(getRockets());
   }, [dispatch]);
 
-  const rockets = useSelector((state) => state.rocketReducer);
+  const rockets = useSelector((state) => state.rocketReducer.rockets);
+  const bookedRockets = useSelector((state) => state.rocketReducer.bookedRockets);
+
+  console.log(rockets);
   return (
     <Provider store={store}>
       <div>
         <Navbar />
         <Routes>
           <Route path="/Myprofile" element={<MyProfile />} />
-          <Route path="/" element={<RocketPage rockets={rockets} />} exact />
+          <Route path="/" element={<RocketPage rockets={rockets} bookedRockets={bookedRockets} />} exact />
           <Route path="/Mission" element={<MissionPage />} />
           <Route path="*" element={<NotMatch />} />
         </Routes>
