@@ -17,7 +17,7 @@ We had to combine all the knowledge we gained in the React/Redux module in order
 - Handle events in a React application;
 - Use React life cycle methods;
 - Apply React best practices and language style guides in code;
-- Use store, actions and reducers in React;
+- Use store, actions and reducers in Redux;
 - Perform a code review for a team member;
 
 
@@ -25,7 +25,13 @@ We had to combine all the knowledge we gained in the React/Redux module in order
 
 As a user: 
 
-
+- I can see a list of all available SpaceX rockets;
+- I can book each rocket by clicking a reservation button;
+- I can cancel an active booking by clicking a cancel button;
+- I can see a list of all current missions, along with a brief description and participation status;
+- I can join a mission by clicking a button near its description;
+- I can leave a mission previously joined;
+- In the "My profile" section, I can see a list of all my reserved rockets and space missions;
 
 ## Live Demo
 
