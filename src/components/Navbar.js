@@ -10,11 +10,6 @@ const Navbar = () => (
         </NavLink>
       </li>
       <li key={2}>
-        <NavLink to="/Dragon" className={(navData) => (navData.isActive ? 'active-link' : '')}>
-          Dragon
-        </NavLink>
-      </li>
-      <li key={3}>
         <NavLink to="/Mission" className={(navData) => (navData.isActive ? 'active-link' : '')}>
           Mission
         </NavLink>
