@@ -5,7 +5,6 @@ import Rocket from '../Rocket';
 
 const RocketPage = (props) => {
   const { rockets, bookedRockets } = props;
-
   const dispatch = useDispatch();
   const reserveRocket = (id) => {
     dispatch(bookRocket(id));
@@ -26,6 +25,7 @@ const RocketPage = (props) => {
               key={rocket.id}
               id={rocket.id}
               name={rocket.name}
+              images={rocket.images}
               description={rocket.description}
               handleBookRocket={reserveRocket}
               isBooked={isBooked}
