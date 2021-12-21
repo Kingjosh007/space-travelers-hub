@@ -15,8 +15,8 @@ const Rocket = (props) => {
         <h3>{name}</h3>
         <p>{description}</p>
       </div>
-      {isBooked ? (<button type="button" onClick={() => handleUnbookRocket(id)}>Reserve Rocket</button>)
-        : (<button type="button" onClick={() => handleBookRocket(id)}>Cancel Reservation</button>) }
+      {isBooked ? (<button type="button" onClick={() => handleUnbookRocket(id)}>Cancel Reservation</button>)
+        : (<button type="button" onClick={() => handleBookRocket(id)}>Book Rocket</button>) }
 
     </li>
   );
