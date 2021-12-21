@@ -10,7 +10,13 @@ const initialState = {
 };
 
 export const getRockets = () => async (dispatch) => {
-  const rocketsArr = await getData(rocketsEndpoint);
+  const data = await getData(rocketsEndpoint);
+  const rocketsArr = data.map((rocket) => ({
+    id: rocket.id,
+    name: rocket.rocket_name,
+    description: rocket.description,
+    images: rocket.flickr_images,
+  }));
   dispatch({ type: GET_ALL_ROCKETS, payload: rocketsArr });
 };
 

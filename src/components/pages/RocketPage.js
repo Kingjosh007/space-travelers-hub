@@ -1,10 +1,24 @@
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRockets } from '../../redux/rocket/rocket';
 
-const RocketPage = (props) => (
+const RocketPage = (props) => {
+
+  const { rockets } = props; 
+  return (
   <div>
     <h3>RocketPage</h3>
+
   </div>
-);
+  );
+};
+
+RocketPage.propTypes = {
+  rockets: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string.isRequired),
+  })).isRequired,
+};
+
 export default RocketPage;
