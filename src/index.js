@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-// eslint-disable-next-line import/extensions
-import SpaceContainer from './component/SpaceContainer';
+import SpaceContainer from './components/SpaceContainer';
 import './App.css';
 
 ReactDOM.render(
