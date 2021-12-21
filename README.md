@@ -1,16 +1,30 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Space Travelers' Hub
+# Space Travelers' Hub (React/Redux Group Project)
+
+## Introduction
+
+### About the requirements
+
+> This is the repo for the second group project in our Microverse journey. It is project created by [Kingjosh007](https://github.com/Kingjosh007) and [mwanawabangona](https://github.com/mwanawabangona).
 
 
+We had to combine all the knowledge we gained in the React/Redux module in order to build this project in 3-4 days. We had to work with the real live data from the SpaceX API. Our task was to build a web application for a company that provides commercial and scientific space travel services. The requirements we had to meet included: 
 
-By building this app, I learned how to use React & Redux (and even connect them to an API). 
-The project was divided into four (4) milestones. That in bold is what I'm working on:
+- Use React components, including conditional components;
+- Use React Router;
+- Connect React and Redux;
+- Handle events in a React application;
+- Use React life cycle methods;
+- Apply React best practices and language style guides in code;
+- Use store, actions and reducers in React;
+- Perform a code review for a team member;
 
-- Milestone 1: Initialize project with components
-- Milestone 2: Create and remove a book
-- Milestone 3: Connect to API
-- **Milestone 4: Style the app**
+
+### More about the project
+
+As a user: 
+
 
 
 ## Live Demo
