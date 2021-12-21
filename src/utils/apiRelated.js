@@ -1,4 +1,4 @@
-const baseUrl = 'https://api.spacexdata.com/v3/';
+const baseUrl = 'https://api.spacexdata.com/v3';
 
 const rocketsEndpoint = `${baseUrl}/rockets`;
 const missionsEndpoint = `${baseUrl}/missions`;
