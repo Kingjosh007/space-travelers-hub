@@ -16,7 +16,6 @@ const SpaceContainer = () => (
         <Route path="/Myprofile" element={<MyProfile />} />
         <Route path="/" element={<RocketPage />} exact />
         <Route path="/Mission" element={<MissionPage />} />
-        <Route path="/Dragon" element={<DragonPage />} />
         <Route path="*" element={<NotMatch />} />
       </Routes>
     </div>
