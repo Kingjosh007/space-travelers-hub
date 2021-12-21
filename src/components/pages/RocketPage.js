@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { bookRocket } from '../../redux/rocket/rocket';
+import { bookRocket, cancelRocketBooking } from '../../redux/rocket/rocket';
 import Rocket from '../Rocket';
 
 const RocketPage = (props) => {
@@ -10,7 +10,7 @@ const RocketPage = (props) => {
     dispatch(bookRocket(id));
   };
 
-  const cancelRocketBooking = (id) => {
+  const unbookRocket = (id) => {
     dispatch(cancelRocketBooking(id));
   };
 
@@ -29,7 +29,7 @@ const RocketPage = (props) => {
               description={rocket.description}
               handleBookRocket={reserveRocket}
               isBooked={isBooked}
-              handleUnbookRocket={cancelRocketBooking}
+              handleUnbookRocket={unbookRocket}
             />
           );
         })}
