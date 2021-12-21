@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
-import store from './redux/configureStore';
-import './index.css';
-import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+// eslint-disable-next-line import/extensions
+import SpaceContainer from './component/SpaceContainer';
+import './App.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </Router>
+    <BrowserRouter>
+      <SpaceContainer />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
 );
