@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RocketDetails from './RocketDetails';
-// eslint-disable-next-line import/extensions
 import Rocketimage from './Rocketimage';
 
 const Rocket = ({

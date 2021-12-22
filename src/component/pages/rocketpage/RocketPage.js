@@ -1,9 +1,3 @@
-const RocketPage = () => (
-  <div>
-    <h3>RocketPage</h3>
-  </div>
-);
-export default RocketPage;
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './rocket.css';
