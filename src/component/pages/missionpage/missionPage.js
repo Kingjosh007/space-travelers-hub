@@ -1,19 +1,29 @@
 import React from 'react';
-import './missionStyles.css';
+import { useSelector } from 'react-redux';
+import MissionList from './missionList';
+import './missionPage.css';
 
-const MissionsPage = () => (
-  <div className="mission__container">
-    <table className="table">
-      <thead>
-        <tr className="row">
-          <th className="column">Mission</th>
-          <th className="column">Description</th>
-          <th className="column">Status</th>
-          <th className="column">{' '}</th>
-        </tr>
-      </thead>
-    </table>
-  </div>
-);
+const MissionsPage = () => {
+  const missions = useSelector((state) => state.missions.missions);
+  return (
+    <div className="mission__container">
+      <table className="table">
+        <thead>
+          <tr className="row">
+            <th className="column head">Mission</th>
+            <th className="column head">Description</th>
+            <th className="column head">Status</th>
+            <th className="column head">{' '}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((mission) => (
+            <MissionList key={mission.id} name={mission.name} description={mission.description} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
 export default MissionsPage;

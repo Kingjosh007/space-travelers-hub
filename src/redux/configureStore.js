@@ -7,7 +7,7 @@ import rocketReducer from './rocket/rocket';
 
 const reducer = combineReducers({
   dragonReducer,
-  missionReducer,
+  missions: missionReducer,
   rocket: rocketReducer,
 });
 
