@@ -1,15 +1,15 @@
 import React from 'react';
-import style from './mission_Style.module.css';
+import './missionStyles.css';
 
 const MissionsPage = () => (
   <div className="mission__container">
-    <table className={style.table}>
+    <table className="table">
       <thead>
-        <tr className={style.row}>
-          <th className={style.column}>Mission</th>
-          <th className={style.column}>Description</th>
-          <th className={style.column}>Status</th>
-          <th className={style.column}>{' '}</th>
+        <tr className="row">
+          <th className="column">Mission</th>
+          <th className="column">Description</th>
+          <th className="column">Status</th>
+          <th className="column">{' '}</th>
         </tr>
       </thead>
     </table>
