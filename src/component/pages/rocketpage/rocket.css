@@ -91,3 +91,29 @@
   border-radius: 4px;
   text-transform: capitalize;
 }
+
+.profile-rocket {
+  width: 30%;
+  row-gap: 10px;
+}
+
+.rocket-profile-header {
+  font-size: 24px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Courier, monospace, Helvetica;
+}
+
+.profile-rocket-cont {
+  width: 100%;
+  border: 1px solid grey;
+}
+
+.rocket-profile-name {
+  font-size: 20px;
+  padding: 30px;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+}
+
+.rocket-profile-name:nth-of-type(even) {
+  background-color: #e8e9e5;
+}

@@ -27,17 +27,31 @@
   padding: 0 1rem;
 }
 
+.statusActive {
+  color: #fff;
+  background: #50a3b8;
+  font-weight: bold;
+  min-width: 140px;
+  padding: 1px 6px 0 6px;
+  line-height: 24px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 0;
+}
+
 .status {
   color: #fff;
   background: #6d757d;
   font-weight: bold;
-  min-width: 116px;
-  padding: 2px 1rem 2px 1rem;
+  min-width: 140px;
+  padding: 1px 6px 0 6px;
+  line-height: 24px;
   border-radius: 6px;
-  margin: 0 1rem;
+  text-align: center;
+  margin: 0;
 }
 
-button {
+.row button {
   font-size: 1.3rem;
   background: transparent;
   border-radius: 5px;
@@ -52,7 +66,7 @@ button {
   background: #ddd;
 }
 
-.buttonLeave {
+.row .buttonLeave {
   font-size: 1.3rem;
   background: transparent;
   border-radius: 5px;
