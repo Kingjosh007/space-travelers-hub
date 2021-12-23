@@ -75,7 +75,7 @@ No screenshot available for now.
 
 - GitHub: [@mwanawabangona](https://github.com/mwanawabangona)
 - Twitter: [@Ellis_aah](https://twitter.com/Ellis_aah)
-
+- Linkedin: [@Ellis Ngona](https://www.linkedin.com/in/ellis-ng-ona-50a600152/)
 
 ## 🤝 Contributing
 
