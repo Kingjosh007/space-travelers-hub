@@ -12,7 +12,12 @@ const MissionList = ({
     <tr className="row">
       <td className="column name">{name}</td>
       <td className="column description">{description}</td>
-      <td className="column column_status"><p className="status">NOT A MEMBER</p></td>
+      <td className="column column_status">
+        {reserved
+        && <p className="statusActive">Active Member</p>}
+        {!reserved
+        && <p className="status">NOT A MEMBER</p>}
+      </td>
       <td className="column column_button">
         {reserved
         && (

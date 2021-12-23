@@ -3,7 +3,6 @@ const FETCH_MISSIONS_SUCCESS = 'missions/missionSlice/FETCH_MISSIONS_SUCCESS';
 const FETCH_MISSIONS_ERROR = 'missions/missionSlice/FETCH_MISSIONS_ERROR';
 const MISSIONS_JOINED = 'missions/missionSlice/MISSIONS_JOINED';
 const MISSIONS_LEFT = 'missions/missionSlice/MISSIONS_LEFT';
-
 const appUrl = 'https://api.spacexdata.com/v3/missions';
 
 export const getMissions = () => async (dispatch) => {
@@ -80,7 +79,6 @@ const missionReducer = (state = initialState, action) => {
       return { ...state, missions: JoinedMissions(state.missions, action.payload) };
     case MISSIONS_LEFT:
       return { ...state, missions: missionsLeft(state.missions, action.payload) };
-
     default:
       return state;
   }
