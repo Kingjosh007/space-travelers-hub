@@ -20,7 +20,6 @@ We had to combine all the knowledge we gained in the React/Redux module in order
 - Use store, actions and reducers in Redux;
 - Perform a code review for a team member;
 
-
 ### More about the project
 
 As a user: 
