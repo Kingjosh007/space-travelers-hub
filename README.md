@@ -51,7 +51,7 @@ To get a local copy of this project running in development mode, do the followin
 
 ## Screenshot
 
-No screenshot available for now.
+![Screenshot showing how it works](screenshots/app.gif)
 
 ## Built With
 
