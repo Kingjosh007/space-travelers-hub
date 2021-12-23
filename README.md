@@ -33,9 +33,9 @@ As a user:
 - I can leave a mission previously joined;
 - In the "My profile" section, I can see a list of all my reserved rockets and space missions;
 
-## Live Demo
+## Live Demo.
 
-This project is not deployed yet. It will be deployed later to **Github Pages** and **Netlify**.
+Here is the link to the live app, along with the deployment status: [See it live](https://space-travelers-hub-1.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/86126481-bc40-430d-a5ed-3f17b332c499/deploy-status)](https://app.netlify.com/sites/space-travelers-hub-1/deploys)
 
 ## Getting Started
 
@@ -51,7 +51,7 @@ To get a local copy of this project running in development mode, do the followin
 
 ## Screenshot
 
-No screenshot available for now.
+![Screenshot showing how it works](screenshots/app.gif)
 
 ## Built With
 
@@ -75,7 +75,7 @@ No screenshot available for now.
 
 - GitHub: [@mwanawabangona](https://github.com/mwanawabangona)
 - Twitter: [@Ellis_aah](https://twitter.com/Ellis_aah)
-
+- Linkedin: [@Ellis Ngona](https://www.linkedin.com/in/ellis-ng-ona-50a600152/)
 
 ## 🤝 Contributing
 
