@@ -1,15 +1,18 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-// eslint-disable-next-line import/extensions
+import store from './redux/configureStore';
 import SpaceContainer from './component/SpaceContainer';
 import './App.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <SpaceContainer />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <SpaceContainer />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
