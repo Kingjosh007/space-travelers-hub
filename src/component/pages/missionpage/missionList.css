@@ -1,0 +1,81 @@
+.row:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.column {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+  padding-bottom: 1.8rem;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.description {
+  color: #474a4e;
+}
+
+.column_button {
+  padding: 0 3rem;
+}
+
+.column_status {
+  padding: 0 1rem;
+}
+
+.statusActive {
+  color: #fff;
+  background: #50a3b8;
+  font-weight: bold;
+  min-width: 140px;
+  padding: 1px 6px 0 6px;
+  line-height: 24px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 0;
+}
+
+.status {
+  color: #fff;
+  background: #6d757d;
+  font-weight: bold;
+  min-width: 140px;
+  padding: 1px 6px 0 6px;
+  line-height: 24px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 0;
+}
+
+.row button {
+  font-size: 1.3rem;
+  background: transparent;
+  border-radius: 5px;
+  min-width: 150px;
+  line-height: 40px;
+  border-color: #444a4f;
+  color: #444a4f;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ddd;
+}
+
+.row .buttonLeave {
+  font-size: 1.3rem;
+  background: transparent;
+  border-radius: 5px;
+  min-width: 150px;
+  border-color: #df5052;
+  color: #df5052;
+  cursor: pointer;
+}
+
+.buttonLeave:hover {
+  background: #fdb9ba;
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+}
+
+.myProfile {
+  display: flex;
+  width: 90%;
+  margin: 40px auto 40px auto;
+}
+
+.myProfile .profile-rocket {
+  margin-left: 20px;
+}
+
+.navBar {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 25px 1rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.navBar img {
+  height: 40px;
+}
+
+.nav-header {
+  column-gap: 6px;
+}
+
+.nav-ul {
+  list-style: none;
+  column-gap: 2rem;
+}
+
+.nav-ul li:last-child {
+  border-left: 1px solid black;
+  padding-left: 2rem;
+}
+
+.nav-ul li a {
+  text-decoration: none;
+  color: #18a2b8;
+  transition: all ease-in 200ms;
+}
+
+.nav-ul li a:hover {
+  font-size: 1.2rem;
+}
+
+.active-link {
+  text-decoration: underline !important;
+}
